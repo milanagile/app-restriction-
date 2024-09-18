@@ -1,0 +1,65 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Show/Hide Emoji</title>\
+    <style>\
+        body \{\
+            display: flex;\
+            justify-content: center;\
+            align-items: center;\
+            height: 100vh;\
+            margin: 0;\
+            font-family: Arial, sans-serif;\
+            background-color: #f0f0f0;\
+        \}\
+\
+        .emoji \{\
+            font-size: 100px;\
+            display: none; /* Initially hidden */\
+        \}\
+\
+        .buttons \{\
+            position: absolute;\
+            top: 20px;\
+            display: flex;\
+            gap: 10px;\
+        \}\
+\
+        button \{\
+            padding: 10px 20px;\
+            font-size: 16px;\
+            cursor: pointer;\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+    <div class="emoji" id="emoji">\uc0\u55357 \u56441 \u55357 \u56725 \u55356 \u57339 \u55357 \u56441 </div>\
+\
+    <div class="buttons">\
+        <button onclick="showEmoji()">Click Me</button>\
+        <button onclick="hideEmoji()">Hide</button>\
+    </div>\
+\
+    <script>\
+        function showEmoji() \{\
+            document.getElementById('emoji').style.display = 'block';\
+        \}\
+\
+        function hideEmoji() \{\
+            document.getElementById('emoji').style.display = 'none';\
+        \}\
+    </script>\
+\
+</body>\
+</html>\
+}
